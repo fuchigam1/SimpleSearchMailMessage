@@ -29,28 +29,28 @@
 
 ## Dependency
 
-- 対応するbaserCMSのバージョン: baserCMS4系(4.2.5〜)
 - baserCMSのメールフォーム機能
 - baserCMSの管理画面で利用される各種ライブラリ
     - jQuery
     - jQuery UI: Datepicker
 
 ### Version Info
+対応するbaserCMSのバージョン: baserCMS4系
 
 | Version | baserCMS | admin-second | admin-thrid |
 |:--|:--|:--|:--|
 | 1.0.0 | 4.2.5〜 | 対応 | 対応 |
+
+### Development Rules
+
+- master・・・最新版
+- dev・・・開発版 (Pull Request Target)
 
 
 ## Support, Reports
 
 - GitHub Issues: https://github.com/materializing/SimpleSearchMailMessage/issues
 - Twitter: https://twitter.com/arata
-
-### Development Rules
-
-- master・・・最新版
-- dev・・・開発版 (Pull Request Target)
 
 
 ## License
