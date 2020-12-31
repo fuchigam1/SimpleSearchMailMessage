@@ -12,7 +12,7 @@
 
 
 ## Uses
-- 受信メール一覧画面にアクセスします。
+- メールフォーム機能の受信メール一覧画面にアクセスします。
 - 画面内の「検索」にアクセスすると検索フォームが表示されます。
 
 
@@ -20,18 +20,9 @@
 - メールフォームプラグインが有効な状態で利用してください。
 
 
-## 確認済バージョン
-
-|baserCMS|プラグイン|ステータス|備考|
-|:--|:--|:--|:--|
-|4.4.2|1.0.0|動作可|admin-thrid対応, admin-second対応|
-|4.3.0|1.0.0|動作可|admin-thrid対応, admin-second対応|
-|4.2.5|1.0.0|動作可|admin-thrid対応, admin-second対応|
-
-
 ## Thanks
 
-- [http://basercms.net/](http://basercms.net/)
-- [http://wiki.basercms.net/](http://wiki.basercms.net/)
-- [http://cakephp.jp](http://cakephp.jp)
-- [Semantic Versioning 2.0.0](http://semver.org/lang/ja/)
+- [https://basercms.net/](https://basercms.net/)
+- [https://wiki.basercms.net/](https://wiki.basercms.net/)
+- [https://cakephp.jp](https://cakephp.jp)
+- [Semantic Versioning 2.0.0](https://semver.org/lang/ja/)
