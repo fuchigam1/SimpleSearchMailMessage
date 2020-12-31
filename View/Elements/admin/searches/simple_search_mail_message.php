@@ -32,7 +32,7 @@
 				</span>
 			</span>
 		<?php else: ?>
-			<span>[受信日]</span>&nbsp;
+			<span>受信日</span>&nbsp;
 			<?php echo $this->BcForm->datePicker('MailMessage.created_begin', ['size' => 12, 'maxlength' => 10], true) ?>
 			&nbsp;〜&nbsp;
 			<?php echo $this->BcForm->datePicker('MailMessage.created_end', ['size' => 12, 'maxlength' => 10], true) ?>
