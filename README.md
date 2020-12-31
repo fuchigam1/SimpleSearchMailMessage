@@ -1,26 +1,43 @@
 # SimpleSearchMailMessage
 
-受信メール一覧画面に、受信日の期間指定による検索機能を追加できるbaserCMS専用のプラグインです。
+受信メール一覧画面に、受信日の期間指定による検索機能を追加できるbaserCMS専用のプラグインです。  
 
-- 受信メール一覧画面で、受信日による受信メールの検索ができる
-- csvダウンロード時、受信日による検索結果内容に基づいたcsvデータがダウンロードできる
+- 受信メール一覧画面で、受信日による受信メールの検索ができます。
+- csvダウンロード時、受信日による検索結果内容に基づいたcsvデータがダウンロードできます。
+
+<p align="center">
+	<img src="./webroot/img/sc_simple_search_mail_message_admin-third.png" alt="受信メール日付検索プラグイン for admin-third">
+	<img src="./webroot/img/sc_simple_search_mail_message_admin-second.png" alt="受信メール日付検索プラグイン for admin-second">
+</p>
+
+[Summary: Wiki](https://github.com/materializing/SimpleSearchMailMessage/wiki)
 
 
-## Installation
-1. 圧縮ファイルを解凍後、BASERCMS/app/plugins/SimpleSearchMailMessage に配置します。
-2. 管理システムのプラグイン管理に入って、表示されている 受信メール日時検索プラグイン を有効化して下さい。
+## Setup, Installation
+1. 圧縮ファイルを解凍後、BASERCMS/app/Plugin/SimpleSearchMailMessage に配置します。
+2. 管理システムのプラグイン管理に入って、表示されている 受信メール日付検索プラグイン を有効化して下さい。
 
 
-## Uses
+## Usage
 - メールフォーム機能の受信メール一覧画面にアクセスします。
 - 画面内の「検索」にアクセスすると検索フォームが表示されます。
 
-
-## 利用上の注意
+### Notice
 - メールフォームプラグインが有効な状態で利用してください。
 
 
-## Thanks
+## Dependency
+- baserCMSのメールフォーム機能
+- baserCMSの管理画面で利用される各種ライブラリ
+    - jQuery
+    - jQuery UI: Datepicker
+
+
+## License
+This software is released under the MIT License, see [LICENSE](https://choosealicense.com/licenses/mit/).
+
+
+## Thanks, References
 
 - [https://basercms.net/](https://basercms.net/)
 - [https://wiki.basercms.net/](https://wiki.basercms.net/)
