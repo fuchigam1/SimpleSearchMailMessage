@@ -16,7 +16,7 @@ class SimpleSearchMailMessageControllerEventListener extends BcControllerEventLi
 
 	/**
 	 * mailMailMessagesStartup
-	 * - フォーム別の検索条件をセッションに保存する
+	 * - セッションに保存された検索条件は、どのフォームの受信一覧画面でも共通で利用されるため、共通利用されるセッションの検索条件にフォーム別の検索条件を設定する
 	 *
 	 * @param CakeEvent $event
 	 */
@@ -27,6 +27,7 @@ class SimpleSearchMailMessageControllerEventListener extends BcControllerEventLi
 			if ($Controller->Session->check("Baser.viewConditions.MailMessagesAdminIndex.filter.MailMessage" . $Controller->mailContent['MailContent']['id'])) {
 				$filter = $Controller->Session->read("Baser.viewConditions.MailMessagesAdminIndex.filter.MailMessage" . $Controller->mailContent['MailContent']['id']);
 			}
+			// セッションに保存された検索条件は、どのフォームの受信一覧画面でも共通で利用されるため、共通利用されるセッションの検索条件にフォーム別の検索条件を設定する
 			$Controller->Session->write("Baser.viewConditions.MailMessagesAdminIndex.filter.MailMessage", $filter);
 		}
 	}
@@ -44,7 +45,7 @@ class SimpleSearchMailMessageControllerEventListener extends BcControllerEventLi
 			$Controller = $event->subject();
 			if (in_array($Controller->request->params['action'], ['admin_index'], true)) {
 				$Controller->search = 'simple_search_mail_message';
-				// セッションに保存された検索条件は、どのフォームの受信一覧画面でも共通で利用されるため、共通利用されるセッションの検索条件にフォーム別の検索条件を設定する
+				// フォーム別の検索条件をセッションに保存する
 				$Controller->Session->write("Baser.viewConditions.MailMessagesAdminIndex.filter.MailMessage" . $Controller->mailContent['MailContent']['id'], $Controller->request->data('MailMessage'));
 			}
 		}
