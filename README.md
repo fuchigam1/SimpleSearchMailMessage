@@ -35,6 +35,7 @@
     - jQuery UI: Datepicker
 
 ### Version Info
+
 対応するbaserCMSのバージョン: baserCMS4系
 
 | Version | baserCMS | admin-second | admin-thrid |
@@ -43,8 +44,17 @@
 
 ### Development Rules
 
+開発ブランチの規則は以下です。
+
 - master・・・最新版
 - dev・・・開発版 (Pull Request Target)
+
+### NoDevelopmentPlan
+
+以下対応予定はありません。
+
+- フォーム別の有効／無効指定
+- 検索項目の時間指定
 
 
 ## Support, Reports
